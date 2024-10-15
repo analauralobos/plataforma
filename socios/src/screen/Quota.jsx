@@ -3,30 +3,33 @@ import Header from "../components/Header";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Cuotas from "../components/Quotas";
-
+import Footer from "../components/Footer";
 export default function Cuota() {
     return (
         <Container>
             <Header />
             <Navbar />
-            <Content>
+            <MainContent>
                 <Cuotas />
-            </Content>
+            </MainContent>
+            <Footer />
         </Container>
     );
 }
 
+// Contenedor principal para estructurar la página
 const Container = styled.div`
-    position: relative;    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Se asegura que la página ocupe toda la altura de la ventana */
 `;
 
-const Content = styled.div`
-    position: absolute;
-    top: 100px; /* Ajusta este valor según la altura total del header y navbar */
-    left: 0;
-    height: calc(100vh - 100px); /* Resta la altura del header y navbar */
-    width: 100vw;    
-    overflow-y: auto; /* Permitir scroll si el contenido excede la altura */
-    padding: 5px; /* Añade espaciado alrededor del contenido */
-    box-sizing: border-box; /* Asegura que el padding no afecte las dimensiones del contenedor */
+// Contenido principal con margen para el header y navbar
+const MainContent = styled.div`
+    flex: 1; /* Hace que el contenido ocupe el espacio restante disponible */
+    padding-top: 100px; /* Ajusta este valor según la altura del header y navbar */
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Permite scroll si el contenido es demasiado grande */
 `;

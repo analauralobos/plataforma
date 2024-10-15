@@ -28,7 +28,8 @@ export default function Navbar() {
 const Container = styled.div`
     width: 100%;
     height: 60px; /* Mantiene la altura del navbar */
-    background-color: #005b25; /* Verde más oscuro para contraste */
+    //background-color: #005b25; /* Verde más oscuro para contraste */
+    background-color: #006637;
     position: fixed;
     top: 100px; /* Debajo del header */
     z-index: 999; 

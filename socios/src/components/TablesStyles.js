@@ -10,9 +10,10 @@ export const Container = styled.div`
   margin: auto;
   padding: 20px;
   padding-top: 80px;
-  background-color: #f0f0f0; /* Color de fondo gris suave */
+  //background-color: #f0f0f0; /* Color de fondo gris suave */
+  background-color: #ffffff; 
   border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más profunda */
+  //box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más profunda */
 
   h1 {
     text-align: left;
@@ -98,6 +99,7 @@ export const TableContainer = styled.div`
   overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
   margin-top: 30px; /* Mayor espacio superior */
   margin-bottom: 30px;
+  background-color: #f2f2f2;
 `;
 
 // Estilo para la tabla
@@ -112,13 +114,15 @@ export const Table = styled.table`
 
 // Estilo para el encabezado de la tabla
 export const TableHeader = styled.thead`
-  background-color: #007A33; /* Color de fondo para el encabezado */
+  //background-color: #007A33; /* Color de fondo para el encabezado */
+  background-color: #004d25;
   color: white; /* Color del texto */
 `;
 
 // Estilo para el cuerpo de la tabla
 export const TableBody = styled.tbody`
-  background-color: #ffffff; /* Color de fondo blanco para el cuerpo */
+  //background-color: #ffffff; /* Color de fondo blanco para el cuerpo */
+  background-color: f2f2f2;
 `;
 
 // Estilo para las celdas de la tabla
@@ -145,7 +149,8 @@ export const ButtonContainer = styled.div`
     gap: 10px; /* Espacio entre los botones */
 `;
 export const Button = styled.button`
-    background-color: #007A33; /* Color verde Ferro */
+    //background-color: #007A33; /* Color verde Ferro */
+    background-color: #006637;
     color: white; /* Texto blanco */
     padding: 12px 20px; /* Espaciado interno aumentado */
     border: none; /* Sin borde */
@@ -157,7 +162,7 @@ export const Button = styled.button`
     
     /* Estilos para el botón en estado hover */
     &:hover {
-        background-color: #005b25; /* Verde más oscuro al pasar el mouse */
+        background-color: #004d25; /* Verde más oscuro al pasar el mouse */
         transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
     }
 

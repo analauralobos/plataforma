@@ -29,8 +29,9 @@ const Container = styled.div`
     .header {
         position: fixed;
         width: 100%;
-        height: 100px; /* Aumenté la altura del header */
-        background-color: #007A33; /* Verde Ferro */
+        height: 100px; /* altura del header */
+        //background-color: #007A33; /* Verde Ferro */
+        background-color: #004d25;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -44,13 +45,13 @@ const Container = styled.div`
     }
 
     img {
-        height: 80px; /* Ajusté la altura del logo */
+        height: 80px; /* altura del logo */
         cursor: pointer;
     }
 
     h1 {
         color: white;
-        font-size: 2rem; /* Aumenté el tamaño del texto */
+        font-size: 2rem; /* tamaño del texto */
         margin: 0 10px;
     }
 

@@ -5,7 +5,6 @@ import { Chart, registerables } from 'chart.js';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import { ContainerSec } from "./TablesStyles";
 
-
 // Registra todos los componentes de Chart.js necesarios
 Chart.register(...registerables);
 

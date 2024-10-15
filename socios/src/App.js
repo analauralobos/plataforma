@@ -31,6 +31,7 @@ function App() {
         <Route path="/pagar-cuota/:id" element={<PagoForm />} />
         <Route path="/editar-socio/:nro_socio" element={<EditarSocio />} />
         <Route path="/agregar-socio" element={<AgregarSocio />} /> 
+        
       </Routes>
     </BrowserRouter>
   );
